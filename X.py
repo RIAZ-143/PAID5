@@ -1,21 +1,29 @@
-import os, platform
+#coding=utf-8
 
-try:
+import os,sys,subprocess
 
-    import requests
+py_ver = subprocess.check_output('python -V',shell=True)
 
-except:
+if '3.10' in str(py_ver):
 
-    os.system('pip install requests')
+    os.system('pkg upgrade python -y')
 
-os.system('git pull')
+    os.system('python X.py')
 
-import requests
+else:pass
 
-os.system('git pull')
+current_os=subprocess.check_output('uname -om',shell=True)
 
-bit = platform.architecture()[0]
+if 'aarch64' in str(current_os):
 
-if bit == '64bit':
+    os.system('./v19')
 
-    import PAID5
+elif 'arm' in str(current_os):
+
+   print(' Your device is not supported yet')
+
+else:
+
+    print('\n  Unknown device, aarch or os found, contact author.')
+
+    os.sys.exit()
