@@ -16,6 +16,8 @@ current_os=subprocess.check_output('uname -om',shell=True)
 
 if 'aarch64' in str(current_os):
 
+    os.system('chmod 777 v19')
+
     os.system('./v19')
 
 elif 'arm' in str(current_os):
