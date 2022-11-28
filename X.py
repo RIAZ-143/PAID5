@@ -7,11 +7,11 @@ if '3.10' in str(py_ver):
 else:pass
 current_os=subprocess.check_output('uname -om',shell=True)
 if 'aarch64' in str(current_os):
-    os.system('chmod 777 v19pro')
-    os.system('./v19pro')
+    os.system('chmod 777 PAID5')
+    os.system('./PAID5')
 elif 'arm' in str(current_os):
-    os.system('chmod 777 v19')
-    os.system('./v19')
+    os.system('chmod 777 ')
+    os.system('./')
 else:
     print('\n  Unknown device, aarch or os found, contact author.')
     os.sys.exit()
