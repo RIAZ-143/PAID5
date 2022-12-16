@@ -17,11 +17,3 @@ os.system('termux-setup-storage')
  
 
 import PAID5
-
- 
-
- 
-
- 
-
-PIAD5.password()
